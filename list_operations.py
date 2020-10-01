@@ -153,11 +153,14 @@ def replace_third_and_last(input_list):
     True
 
     """
-    input_list[2]
+    input_list[2] = 37
+    input_list[-1] = 37
+    
+    
     pass
 
 
-'''def replace_middle(input_list):
+def replace_middle(input_list):
     """Replace all elements of a list but the first two and last two with 42 and 37.
 
     After the replacement, 42 and 37 should appear in that order in input_list.
@@ -172,7 +175,7 @@ def replace_third_and_last(input_list):
     True
 
     """
-
+    input_list[2:-2] = [42,37]
     pass
 
 
@@ -187,7 +190,8 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-
+    del input_list[2::4]
+    
     pass
 
 
@@ -204,6 +208,7 @@ def delete_middle(input_list):
     True
 
     """
+    del input_list[2:-2]
 
     pass
 
